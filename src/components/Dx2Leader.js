@@ -9,7 +9,7 @@ const Dx2Leader = ({ agBonus, onChange }) => (
   >
     <Form size="mini">
       <Form.Input
-        label="(Experimental) Set Dx2 Leader Ag Bonus"
+        label="Set Dx2 Leader Ag Bonus"
         value={agBonus}
         onChange={onChange}
         type="number"

@@ -38,8 +38,14 @@ const demons = (state = initialState, action) => {
         demon.id === action.id ? { ...demon, agility: refDemon.agility } : demon
       );
 
+    case "TOGGLE_HELLS_PARK":
+      return state.map(demon =>
+        demon.id === 5 ? {...demon, agility: 0, speedster: false, bonus: 0} : demon
+      )
+
     default:
       return state;
+
   }
 };
 

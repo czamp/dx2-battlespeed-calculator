@@ -17,8 +17,8 @@ const Party = ({
   hellsPark, toggleHellsPark
 }) => (
   <Container>
-    <Grid columns={hellsPark ? 5 : 4} doubling stackable>
-      <Grid.Row>
+    <Grid doubling stackable>
+      <Grid.Row columns={hellsPark ? 5 : 4}>
           <Grid.Column key={demons[0].id}>
             <Demon
               {...demons[0]}
@@ -72,7 +72,7 @@ const Party = ({
         </Grid.Column>
         }
       </Grid.Row>
-      <Grid.Row>
+      <Grid.Row columns={2}>
         <Grid.Column>
           <Dx2Leader
             agBonus={agBonus}
