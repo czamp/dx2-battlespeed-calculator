@@ -5,7 +5,8 @@ const initialState = [
   { id: 1, agility: 0, bonus: 0, speedster: false },
   { id: 2, agility: 0, bonus: 0, speedster: false },
   { id: 3, agility: 0, bonus: 0, speedster: false },
-  { id: 4, agility: 0, bonus: 0, speedster: false }
+  { id: 4, agility: 0, bonus: 0, speedster: false },
+  { id: 5, agility: 0, bonus: 0, speedster: false }
 ];
 
 const demons = (state = initialState, action) => {

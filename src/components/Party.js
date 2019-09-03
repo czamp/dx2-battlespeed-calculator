@@ -19,18 +19,58 @@ const Party = ({
   <Container>
     <Grid columns={hellsPark ? 5 : 4} doubling stackable>
       <Grid.Row>
-        {demons.map(demon => (
-          <Grid.Column key={demon.id}>
+          <Grid.Column key={demons[0].id}>
             <Demon
-              {...demon}
-              onAgChange={e => updateAgility(demon.id, e.target.value)}
-              onBonusChange={e => updateBonus(demon.id, e.target.value)}
-              onToggle={() => toggleSpeedster(demon.id)}
-              onSelectChange={e => onSelectChange(demon.id, { name: e.value })}
+              {...demons[0]}
+              onAgChange={e => updateAgility(demons[0].id, e.target.value)}
+              onBonusChange={e => updateBonus(demons[0].id, e.target.value)}
+              onToggle={() => toggleSpeedster(demons[0].id)}
+              onSelectChange={e => onSelectChange(demons[0].id, { name: e.value })}
               demonOptions={demonOptions}
             />
           </Grid.Column>
-        ))}
+        <Grid.Column key={demons[1].id}>
+          <Demon
+              {...demons[1]}
+              onAgChange={e => updateAgility(demons[1].id, e.target.value)}
+              onBonusChange={e => updateBonus(demons[1].id, e.target.value)}
+              onToggle={() => toggleSpeedster(demons[1].id)}
+              onSelectChange={e => onSelectChange(demons[1].id, { name: e.value })}
+              demonOptions={demonOptions}
+          />
+        </Grid.Column>
+        <Grid.Column key={demons[2].id}>
+          <Demon
+              {...demons[2]}
+              onAgChange={e => updateAgility(demons[2].id, e.target.value)}
+              onBonusChange={e => updateBonus(demons[2].id, e.target.value)}
+              onToggle={() => toggleSpeedster(demons[2].id)}
+              onSelectChange={e => onSelectChange(demons[2].id, { name: e.value })}
+              demonOptions={demonOptions}
+          />
+        </Grid.Column>
+        <Grid.Column key={demons[3].id}>
+          <Demon
+              {...demons[3]}
+              onAgChange={e => updateAgility(demons[3].id, e.target.value)}
+              onBonusChange={e => updateBonus(demons[3].id, e.target.value)}
+              onToggle={() => toggleSpeedster(demons[3].id)}
+              onSelectChange={e => onSelectChange(demons[3].id, { name: e.value })}
+              demonOptions={demonOptions}
+          />
+        </Grid.Column>
+        {hellsPark &&
+        <Grid.Column key={demons[4].id}>
+          <Demon
+              {...demons[4]}
+              onAgChange={e => updateAgility(demons[4].id, e.target.value)}
+              onBonusChange={e => updateBonus(demons[4].id, e.target.value)}
+              onToggle={() => toggleSpeedster(demons[4].id)}
+              onSelectChange={e => onSelectChange(demons[4].id, { name: e.value })}
+              demonOptions={demonOptions}
+          />
+        </Grid.Column>
+        }
       </Grid.Row>
       <Grid.Row>
         <Grid.Column>

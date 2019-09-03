@@ -13,7 +13,8 @@ const totalSpeed = demons =>
   getDemonSpeed(demons[0]) +
   getDemonSpeed(demons[1]) +
   getDemonSpeed(demons[2]) +
-  getDemonSpeed(demons[3]);
+  getDemonSpeed(demons[3]) +
+  getDemonSpeed(demons[4]);
 
 const activeDemons = demons => demons.filter(demon => demon.agility > 0);
 const demonCount = demons => activeDemons(demons).length;
