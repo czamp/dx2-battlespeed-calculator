@@ -5,7 +5,8 @@ import {
   updateBonus,
   toggleSpeedster,
   selectCompendiumDemon,
-  setAgBonus
+  setAgBonus,
+    toggleHellsPark
 } from "../actions";
 import Party from "../components/Party";
 import MenuItem from "../components/MenuItem";
@@ -20,7 +21,8 @@ const mapStateToProps = (state, ownProps) => ({
     value: c.name,
     key: c.name
   })),
-  agBonus: state.agBonus
+  agBonus: state.agBonus,
+  hellsPark: state.hellsPark
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -28,7 +30,8 @@ const mapDispatchToProps = dispatch => ({
   updateBonus: (id, value) => dispatch(updateBonus(id, value)),
   toggleSpeedster: id => dispatch(toggleSpeedster(id)),
   onSelectChange: (id, cDemon) => dispatch(selectCompendiumDemon(id, cDemon)),
-  onAgBonusChange: value => dispatch(setAgBonus(value))
+  onAgBonusChange: value => dispatch(setAgBonus(value)),
+  toggleHellsPark: bool => dispatch(toggleHellsPark(bool))
 });
 
 export default connect(

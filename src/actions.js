@@ -25,3 +25,7 @@ export const setAgBonus = value => ({
   type: "SET_AG_BONUS",
   value
 });
+
+export const toggleHellsPark = () => ({
+  type: "TOGGLE_HELLS_PARK"
+});

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Container, Grid } from "semantic-ui-react";
 import Demon from "./Demon";
 import Dx2Leader from "./Dx2Leader";
+import HellsParkToggle from './HellsParkToggle';
 
 const Party = ({
   demons,
@@ -12,10 +13,11 @@ const Party = ({
   onSelectChange,
   demonOptions,
   agBonus,
-  onAgBonusChange
+  onAgBonusChange,
+  hellsPark, toggleHellsPark
 }) => (
   <Container>
-    <Grid columns={4} doubling stackable>
+    <Grid columns={hellsPark ? 5 : 4} doubling stackable>
       <Grid.Row>
         {demons.map(demon => (
           <Grid.Column key={demon.id}>
@@ -35,6 +37,13 @@ const Party = ({
           <Dx2Leader
             agBonus={agBonus}
             onChange={e => onAgBonusChange(e.target.value)}
+          />
+        </Grid.Column>
+        {/*Hells Park Toggle*/}
+        <Grid.Column>
+          <HellsParkToggle
+              hellsPark={hellsPark}
+              onToggle={toggleHellsPark}
           />
         </Grid.Column>
       </Grid.Row>

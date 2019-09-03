@@ -52,4 +52,13 @@ const agBonus = (state = 0, action) => {
   }
 };
 
-export default combineReducers({ demons, agBonus });
+const hellsPark = (state = false, action) => {
+  switch (action.type) {
+    case "TOGGLE_HELLS_PARK":
+      return !state;
+    default:
+      return state;
+  }
+};
+
+export default combineReducers({ demons, agBonus, hellsPark });
