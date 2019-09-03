@@ -54,6 +54,12 @@
     "agility": 160
   },
   {
+    "name": "Mahakala",
+    "race": "Tenma",
+    "grade": 92,
+    "agility": 148
+  },
+  {
     "name": "Mot",
     "race": "Reaper",
     "grade": 91,
@@ -382,6 +388,12 @@
     "race": "Reaper",
     "grade": 72,
     "agility": 158
+  },
+  {
+    "name": "Agni",
+    "race": "Tenma",
+    "grade": 70,
+    "agility": 138
   },
   {
     "name": "Anubis",

@@ -5,7 +5,6 @@ import {
   Modal,
   Divider,
   Header,
-  List
 } from "semantic-ui-react";
 import Instructions from "./Instructions";
 import blackFrost from "../blackfrost.png";

@@ -2,7 +2,7 @@
   "name": "dx2-battlespeed-calculator",
   "version": "0.2.3",
   "private": true,
-  "homepage": "https://czamp.github.io/dx2-battlespeed-calculator/",
+  "homepage": ".",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "react": "^16.4.2",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build --scripts-prepend-node-path",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

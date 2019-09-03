@@ -53,8 +53,6 @@ class WelcomeMessage extends React.Component {
             <Header inverted>New in {version}:</Header>
             <ChangelogItem changes={messages[version]} />
             <Divider />
-            <Header inverted>v.0.1.1</Header>
-            <ChangelogItem changes={messages["v.0.1.1"]} />
           </Modal.Description>
         </Modal.Content>
       </Modal>
